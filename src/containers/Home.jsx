@@ -16,8 +16,8 @@ const Home = () => {
     const initialState = useInitialState(API);
 
     return (
-        <div className="App">
-            <Header />
+        <>
+
             <Search />
 
             {
@@ -47,8 +47,7 @@ const Home = () => {
                 </Carousel>
             </Categories>
 
-            <Footer />
-        </div>
+        </>
     )
 }
 
