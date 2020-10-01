@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import reducer from './reducers';
 import App from './routes/App';
 
+//data necesaria para inicializar nuestro estado en redux
 const initialState = {
       "user": {},
       "playing": {},
@@ -170,8 +172,12 @@ const initialState = {
       ]
   }
 
+//utilizamos el createStore que importamos y creamos un nuevo store para pasarselo a nuestro Provider
+// el primer param sería el reducer y el segundo el estado inicial
+const store = createStore(reducer, initialState);
+
 ReactDOM.render(
-    <Provider>
+    <Provider store={ store } >
         <App />
     </Provider>,
     document.getElementById('app'));
