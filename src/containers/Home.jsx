@@ -5,12 +5,14 @@ import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
+import Header from '../components/Header';
 
 //Ahora que ya está conectado con connect, podemos recibir las propiedades o props en nuestro componente
 const Home = ({ mylist, trends, originals }) => {
 
     return (
         <>
+            <Header />
 
             <Search />
 
@@ -20,10 +22,10 @@ const Home = ({ mylist, trends, originals }) => {
                     <Carousel>
                         {
                             mylist.map(item =>
-                                <CarouselItem 
-                                key={item.id} 
-                                {...item} 
-                                isList
+                                <CarouselItem
+                                    key={item.id}
+                                    {...item}
+                                    isList
                                 />)
                         }
                     </Carousel>

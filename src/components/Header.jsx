@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 import gravatar from '../utils/gravatar'
 import { logoutRequest } from '../actions/index';
 import '../assets/styles/components/Header.scss';
@@ -9,7 +10,7 @@ import userIcon from '../assets/static/user-icon.png';
 
 const Header = (props) => {
 
-  const { user } = props;
+  const { user, isLogin, isRegister } = props;
   //valida si este objeto tiene más de un elemento. Se usa object.keys() para pasar el objeto a array y poder usar .length
   //para comparar o validar la cantidad de elementos que tiene dentro este objeto.
   const hasUser = Object.keys(user).length > 0;
@@ -18,9 +19,16 @@ const Header = (props) => {
     props.logoutRequest({})
   }
   
+  //npm install classnames --save
+  //Se encargará de cambiar la clase y el efecto visual que tiene nuestro header
+  //De esta manera le paso una variable a className que tiene condiciones, que si se cumplen van a mostrar un valor u otro.
+  const headerClass = classNames('header', {
+    isLogin,
+    isRegister,
+  });
 
   return (
-    <header className="header">
+    <header className={ headerClass }>
 
       <Link to="/">
         <img className="header__img" src={logo} alt="Matías Video" />
