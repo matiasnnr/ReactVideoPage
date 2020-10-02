@@ -1,4 +1,4 @@
-import { SET_FAVORITE, DELETE_FAVORITE, LOGIN_REQUEST, LOGOUT_REQUEST, REGISTER_REQUEST } from '../actions/index';
+import { SET_FAVORITE, DELETE_FAVORITE, LOGIN_REQUEST, LOGOUT_REQUEST, REGISTER_REQUEST, GET_VIDEO_SOURCE } from '../actions/index';
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -34,6 +34,14 @@ const reducer = (state, action) => {
             return {
                 ...state, //retornamos el estado como lo tenemos
                 user: action.payload, //y modificamos este elemento del estado
+            }
+        case GET_VIDEO_SOURCE:
+            return {
+                ...state, //retornamos el estado como lo tenemos
+                playing: 
+                state.trends.find(item => item.id === Number(action.payload)) //obtenemos el elemento que es válido
+                || state.originals.find(item => item.id === Number(action.payload))
+                || [] //retornamos un array vacío, ya que no hay un elemento con ese id
             }
         default:
             return state;

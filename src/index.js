@@ -23,7 +23,7 @@ const initialState = {
           "duration": 164,
           "cover": "http://dummyimage.com/800x600.png/99118E/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
         },
         {
           "id": 3,
@@ -36,7 +36,7 @@ const initialState = {
           "duration": 137,
           "cover": "http://dummyimage.com/800x600.png/302140/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 4,
@@ -49,7 +49,7 @@ const initialState = {
           "duration": 163,
           "cover": "http://dummyimage.com/800x600.png/5472FF/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 5,
@@ -62,7 +62,7 @@ const initialState = {
           "duration": 194,
           "cover": "http://dummyimage.com/800x600.png/B36F20/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 6,
@@ -75,7 +75,7 @@ const initialState = {
           "duration": 124,
           "cover": "http://dummyimage.com/800x600.png/CCC539/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 7,
@@ -88,7 +88,7 @@ const initialState = {
           "duration": 179,
           "cover": "http://dummyimage.com/800x600.png/FF7A90/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         }
       ],
       "originals": [
@@ -103,7 +103,7 @@ const initialState = {
           "duration": 148,
           "cover": "http://dummyimage.com/800x600.png/306880/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 9,
@@ -116,7 +116,7 @@ const initialState = {
           "duration": 128,
           "cover": "http://dummyimage.com/800x600.png/604180/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 10,
@@ -129,7 +129,7 @@ const initialState = {
           "duration": 346,
           "cover": "http://dummyimage.com/800x600.png/FF91BA/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 11,
@@ -142,7 +142,7 @@ const initialState = {
           "duration": 226,
           "cover": "http://dummyimage.com/800x600.png/45807C/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 12,
@@ -155,7 +155,7 @@ const initialState = {
           "duration": 190,
           "cover": "http://dummyimage.com/800x600.png/577380/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         },
         {
           "id": 13,
@@ -168,7 +168,7 @@ const initialState = {
           "duration": 160,
           "cover": "http://dummyimage.com/800x600.png/5472FF/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/watch?v=2QKV4LKfizs&ab_channel=FilipendulaUlmaria"
+          "source": "https://vod-progressive.akamaized.net/exp=1601683794~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F953%2F18%2F454766458%2F2004604282.mp4~hmac=7702f4ad5152602d5f7f72067261e138f7d8db52c29f7cfe474523e8accfd742/vimeo-prod-skyfire-std-us/01/953/18/454766458/2004604282.mp4"
         }
       ]
   }
