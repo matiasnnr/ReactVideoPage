@@ -6,6 +6,7 @@ import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 
+//Ahora que ya está conectado con connect, podemos recibir las propiedades o props en nuestro componente
 const Home = ({ mylist, trends, originals }) => {
 
     return (
@@ -44,7 +45,7 @@ const Home = ({ mylist, trends, originals }) => {
     )
 }
 
-//nos trae los elementos desde el estado
+//nos trae los elementos desde el estado y los mappea a un objeto con las propiedades o props
 const mapStateToProps = state => {
     return{
         mylist: state.mylist,
@@ -54,6 +55,6 @@ const mapStateToProps = state => {
 }
 
 //export default Home;
-//connect conectará redux con un componente de nuestra aplicación
+//connect conectará un componente con el store
 //export default connect(props, actions)(Home);
 export default connect(mapStateToProps, null)(Home);
