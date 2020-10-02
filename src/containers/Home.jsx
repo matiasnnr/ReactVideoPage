@@ -19,7 +19,12 @@ const Home = ({ mylist, trends, originals }) => {
                 <Categories title="Mi lista">
                     <Carousel>
                         {
-                            mylist.map(item => <CarouselItem key={item.id} {...item} />)
+                            mylist.map(item =>
+                                <CarouselItem 
+                                key={item.id} 
+                                {...item} 
+                                isList
+                                />)
                         }
                     </Carousel>
                 </Categories>
@@ -47,7 +52,7 @@ const Home = ({ mylist, trends, originals }) => {
 
 //nos trae los elementos desde el estado y los mappea a un objeto con las propiedades o props
 const mapStateToProps = state => {
-    return{
+    return {
         mylist: state.mylist,
         trends: state.trends,
         originals: state.originals

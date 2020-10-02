@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './reducers';
 import App from './routes/App';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 //data necesaria para inicializar nuestro estado en redux
 const initialState = {
@@ -174,10 +175,13 @@ const initialState = {
 
 //utilizamos el createStore que importamos y creamos un nuevo store para pasarselo a nuestro Provider
 // el primer param sería el reducer y el segundo el estado inicial
-const store = createStore(reducer, initialState);
+const store = createStore(reducer, initialState, composeWithDevTools());
 
 ReactDOM.render(
     <Provider store={ store } >
         <App />
     </Provider>,
     document.getElementById('app'));
+
+
+/*createStore(reducer, [initialState], [enhancer])*/

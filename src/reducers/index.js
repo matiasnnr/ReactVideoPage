@@ -1,14 +1,21 @@
+import { SET_FAVORITE, DELETE_FAVORITE } from '../actions/index';
+
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'SET_FAVORITE':
-            return {
-                //...state traigo el state que ya tengo (deestructurandolo) y ahora veo que elemento voy a actualizar o
-                //que elemento voy a cambiar dentro del estado que tengo.
-                ...state,
-                //traemos los elementos del estado anterior y agregamos los nuevos
-                mylist: [...state.mylist, action.payload]
-            }
-        case 'DELETE_FAVORITE':
+        case SET_FAVORITE:
+            const exist = state.mylist.find(item => item.id === action.payload.id)
+            console.log(exist);
+            return (exist ? { ...state }
+                    : {
+                        //...state traigo el state que ya tengo (deestructurandolo) y ahora veo que elemento voy a actualizar o
+                        //que elemento voy a cambiar dentro del estado que tengo.
+                        ...state,
+                        //traemos los elementos del estado anterior y agregamos los nuevos
+                        mylist: [...state.mylist, action.payload]
+                        //retornamos un nuevo estado o state al Store
+                    }
+            )
+        case DELETE_FAVORITE:
             return {
                 ...state,
                 mylist: state.mylist.filter(items => items.id !== action.payload)
