@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { loginRequest } from '../actions/index';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/Login.scss';
 import googleIcon from '../assets/static/google-icon.png';
 import twitterIcon from '../assets/static/twitter-icon.png';
 
-const Login = () => {
+const Login = (props) => {
 
   const [form, setValues] = useState({
     email: '',
@@ -20,6 +22,8 @@ const Login = () => {
 
   const handleSumbit = (event) => {
     event.preventDefault(); //para prevenir el comportamiento por default de enviar desde el formulario el email y password por url
+    props.loginRequest(form);
+    props.history.push('/'); //permite movernos hacia donde sea necesario, en este caso al home
     console.log(form);
   }
   
@@ -62,4 +66,8 @@ const Login = () => {
   )
 }
 
-export default Login;
+const mapDispatchToProps = {
+  loginRequest, 
+}
+
+export default connect(null, mapDispatchToProps)(Login);
