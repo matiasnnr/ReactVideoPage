@@ -1,27 +1,50 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import gravatar from '../utils/gravatar'
 import '../assets/styles/components/Header.scss';
 import logo from '../assets/static/logo-video.png';
 import userIcon from '../assets/static/user-icon.png';
 
-const Header = () => (
-  <header className="header">
+const Header = (props) => {
 
-    <Link to="/">
-      <img className="header__img" src={logo} alt="Matías Video" />
-    </Link>
+  const { user } = props;
+  //valida si este objeto tiene más de un elemento. Se usa object.keys() para pasar el objeto a array y poder usar .length
+  //para comparar o validar la cantidad de elementos que tiene dentro este objeto.
+  const hasUser = Object.keys(user).length > 0;
 
-    <div className="header__menu">
-      <div className="header__menu--profile">
-        <img src={userIcon} alt="user icon" />
-        <p>Perfil</p>
+  return (
+    <header className="header">
+
+      <Link to="/">
+        <img className="header__img" src={logo} alt="Matías Video" />
+      </Link>
+
+      <div className="header__menu">
+        <div className="header__menu--profile">
+
+          {
+            hasUser
+              ? <img src={gravatar(user.email)} alt={user.email} />
+              : <img src={userIcon} alt="user icon" />
+          }
+
+          <p>Perfil</p>
+        </div>
+        <ul>
+          <li><Link to="/">Cuenta</Link></li>
+          <li><Link to="/login">Iniciar sesión</Link></li>
+        </ul>
       </div>
-      <ul>
-        <li><Link to="/">Cuenta</Link></li>
-        <li><Link to="/login">Iniciar sesión</Link></li>
-      </ul>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    user: state.user,
+  }
+}
+
+
+export default connect(mapStateToProps, null)(Header);
