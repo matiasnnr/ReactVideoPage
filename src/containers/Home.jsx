@@ -14,7 +14,7 @@ const Home = ({ mylist, trends, originals }) => {
         <>
             <Header />
 
-            <Search />
+            <Search isHome />
 
             {
                 mylist.length > 0 &&
