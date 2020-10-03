@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83a407f9e63cdc7ccd787f2ac9315ef8",
+    "revision": "abcdf036dd32d701622c9997d43e1f41",
     "url": "/deploy-react-videos-github-pages/index.html"
   },
   {
-    "revision": "f007cb8713a33ca26cf7",
+    "revision": "8044df8f080276d79d92",
     "url": "/deploy-react-videos-github-pages/static/css/main.90279d32.chunk.css"
   },
   {
-    "revision": "86c004fc7190000d7380",
-    "url": "/deploy-react-videos-github-pages/static/js/2.bf142706.chunk.js"
+    "revision": "1369696f38e6778cb5fc",
+    "url": "/deploy-react-videos-github-pages/static/js/2.814a674e.chunk.js"
   },
   {
     "revision": "fa24d2988fd9ee29f9cba16979460922",
-    "url": "/deploy-react-videos-github-pages/static/js/2.bf142706.chunk.js.LICENSE.txt"
+    "url": "/deploy-react-videos-github-pages/static/js/2.814a674e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f007cb8713a33ca26cf7",
-    "url": "/deploy-react-videos-github-pages/static/js/main.8982427f.chunk.js"
+    "revision": "8044df8f080276d79d92",
+    "url": "/deploy-react-videos-github-pages/static/js/main.cac99d72.chunk.js"
   },
   {
     "revision": "c15c00b05b146069fd8e",
